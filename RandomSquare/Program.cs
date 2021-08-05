@@ -38,7 +38,10 @@ namespace RandomSquare
             // display result
             Console.WriteLine("     Listing of distinct squared numbers that are even:");
             Console.Write("     ");
-            squaresList.ForEach(number => Console.Write($"{number} "));
+            foreach(int square in distinctSquares)
+            {
+                Console.Write($"{square} ");
+            }
             Console.Write("\n\n");
         }
     }
